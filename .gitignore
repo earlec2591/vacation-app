@@ -1,0 +1,34 @@
+# Node.js dependencies
+**/node_modules/
+**/npm-debug.log
+**/yarn-error.log
+
+# Vite or React build
+/frontend/dist/
+.vite/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Docker
+**/.dockerignore
+**/Dockerfile*
+**/docker-compose.yml
+
+# Kubernetes
+k8s/.DS_Store
+
+# IDEs and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# GitHub Actions cache
+.github/workflows/*.log
+.github/workflows/*.tmp
