@@ -28,6 +28,7 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/frontend:latest
 
       - name: Build and push backend
@@ -36,4 +37,5 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/backend:latest
